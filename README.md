@@ -10,10 +10,11 @@ This project demonstrates an end-to-end ETL (Extract, Transform, Load) pipeline 
 
 The pipeline:
 
-• Extracts Airbnb listing data from a Kaggle dataset
-• Cleans and transforms raw records using Pandas
-• Loads the processed dataset into PostgreSQL
-• Records ETL execution details using Python logging
+* Extracts Airbnb listing data from a Kaggle dataset
+* Cleans and transforms raw records using Pandas
+* Loads the processed dataset into PostgreSQL
+* Records ETL execution details using Python logging
+
 
 ---
 
@@ -138,5 +139,7 @@ python main.py
 
 # Author
 
-### SHIVANI JAISWAL
-#    Data Engineer
+# Author
+
+###  SHIVANI JAISWAL 
+      Data Engineer
