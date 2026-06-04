@@ -1,0 +1,22 @@
+# Original Kaggle dataset (35 MB)
+Airbnb_Open_Data.csv
+
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Log files generated during ETL execution
+log.txt
+*.log
+
+# VS Code workspace settings
+.vscode/
+
+# Environment variables (if used in future)
+.env
+
+# Operating system files
+.DS_Store
+Thumbs.db
