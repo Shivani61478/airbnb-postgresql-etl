@@ -139,7 +139,5 @@ python main.py
 
 # Author
 
-# Author
-
 ###  SHIVANI JAISWAL 
       Data Engineer
