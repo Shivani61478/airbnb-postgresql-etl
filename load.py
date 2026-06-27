@@ -7,15 +7,18 @@ logging.basicConfig(
     format='%(asctime)s - %(levelname)s - %(message)s'
 )
 
-
-
 def load(df):
     logging.info("Data loading started.")
+    try:
+        engine = create_engine('postgresql+psycopg2://username:password@localhost:5432/airbnb_db')
 
-    engine = create_engine('postgresql+psycopg2://your_username:your_password@localhost:5432/airbnb_db')
+        df.to_sql("airbnb_listings", engine, index=False, if_exists="replace")
 
-    logging.info("Data loaded into Postgresql")
+        logging.info("Data loaded into PostgreSQL successfully")
+        print("Data loaded successfully")
 
-    print("Data loaded sucessfully")
+    except Exception as e:
 
+        logging.error(f"Failed to load data: {e}")
+        print(f"Error loading data: {e}")
     
